@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.lafa.commonsimaging</groupId>
+  <artifactId>commons-imaging</artifactId>
+  <version>1.0.0</version>
+  <name>commonsimaging</name>
+  <description>Project to hold commons-imaging library</description>
+  
+  <repositories>
+     <repository>
+         <id>local-lib</id>
+         <url>file://${project.basedir}/libs</url>
+     </repository>
+  </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.8</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>   
+             
+        <dependency>
+           <groupId>org.apache.commons</groupId>
+           <artifactId>commons-imaging</artifactId>
+           <version>1.0</version>
+        </dependency>
+    </dependencies>
+    
+</project>
